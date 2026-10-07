@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Form | Премиум мебель для дома</title>
+    <meta
+      name="description"
+      content="Интернет-магазин премиум мебели для дома. Современные диваны, столы, кресла и предметы интерьера для гармоничного пространства."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <div class="brand">
+            <span class="brand-mark">A</span>
+            <div>
+              <span class="brand-name">Atelier Form</span>
+              <small>Luxury interiors</small>
+            </div>
+          </div>
+
+          <nav class="nav" aria-label="Главная навигация">
+            <a href="#catalog">Каталог</a>
+            <a href="#collections">Коллекции</a>
+            <a href="#about">О бренде</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+
+          <div class="header-actions">
+            <button class="icon-button" aria-label="Поиск">⌕</button>
+            <button class="icon-button cart-trigger" aria-label="Корзина">
+              Корзина
+              <span class="cart-badge" id="cartBadge">0</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow">Премиальная мебель для жизни в стиле</p>
+              <h1>Создайте дома атмосферу роскоши и комфорта.</h1>
+              <p class="hero-text">
+                Индивидуальные решения для гостиной, спальни и рабочего пространства —
+                из натуральных материалов, crafted with precision.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#catalog" class="primary-btn">Смотреть каталог</a>
+                <a href="#about" class="secondary-btn">Н��ша история</a>
+              </div>
+
+              <ul class="hero-meta">
+                <li><strong>4.9/5</strong><span>средняя оценка</span></li>
+                <li><strong>12k+</strong><span>довольных клиентов</span></li>
+                <li><strong>24 мес.</strong><span>гарантия</span></li>
+              </ul>
+            </div>
+
+            <div class="hero-visual" aria-label="Премиум интерьер">
+              <div class="floating-card card-one">
+                <span>Новая коллекция</span>
+                <strong>Maison 2026</strong>
+              </div>
+              <div class="floating-card card-two">
+                <span>Доставка</span>
+                <strong>по всей России</strong>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                alt="Премиальная гостиная в современном стиле"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="partners">
+          <div class="container partner-strip">
+            <span>Natural Oak</span>
+            <span>Craft House</span>
+            <span>Maison Étoile</span>
+            <span>Verde Studio</span>
+            <span>Horizon Home</span>
+          </div>
+        </section>
+
+        <section id="collections" class="collections">
+          <div class="container section-head">
+            <div>
+              <p class="eyebrow">Коллекции</p>
+              <h2>Мебель, которая преображает пространство</h2>
+            </div>
+            <a href="#catalog">Посмотреть все</a>
+          </div>
+
+          <div class="container collections-grid">
+            <article class="collection-card large">
+              <div>
+                <p>Для гостиной</p>
+                <h3>Комфорт и архитектура</h3>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+                alt="Модульная гостиная"
+              />
+            </article>
+
+            <article class="collection-card">
+              <div>
+                <p>Для спальни</p>
+                <h3>Тихая роскошь</h3>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                alt="Спальня премиум класса"
+              />
+            </article>
+
+            <article class="collection-card">
+              <div>
+                <p>Для кабинета</p>
+                <h3>Уютная продуктивность</h3>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80"
+                alt="Мебель для рабочего кабинета"
+              />
+            </article>
+          </div>
+        </section>
+
+        <section id="catalog" class="catalog">
+          <div class="container section-head">
+            <div>
+              <p class="eyebrow">Каталог</p>
+              <h2>Бестселлеры сезона</h2>
+            </div>
+            <div class="filters" aria-label="Фильтр товаров">
+              <button class="filter-btn active" data-filter="all">Все</button>
+              <button class="filter-btn" data-filter="sofa">Диваны</button>
+              <button class="filter-btn" data-filter="chair">Кресла</button>
+              <button class="filter-btn" data-filter="table">Столы</button>
+              <button class="filter-btn" data-filter="lighting">Освещение</button>
+            </div>
+          </div>
+
+          <div class="container products-grid" id="productsGrid"></div>
+        </section>
+
+        <section id="about" class="about">
+          <div class="container about-inner">
+            <div class="about-visual">
+              <img
+                src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=900&q=80"
+                alt="Дизайнерский интерьер"
+              />
+            </div>
+
+            <div class="about-copy">
+              <p class="eyebrow">О бренде</p>
+              <h2>Сочетание европейского дизайна и функциональности</h2>
+              <p>
+                Atelier Form создает мебель для тех, кто ценит спокойствие, качество и
+                личный стиль. Мы работаем с лучшими материалами, чтобы кажд��я деталь
+                служила долгие годы и радовала в каждом доме.
+              </p>
+              <ul>
+                <li>Натуральное дерево, мрамор, льняная ткань и мягкий велюр</li>
+                <li>Авторские решения под ваш интерьер и площадь помещения</li>
+                <li>Индивидуальная консультация по стилю, планировке и подбору материалов</li>
+              </ul>
+              <a href="#faq" class="primary-btn">Задать вопрос</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="benefits">
+          <div class="container">
+            <div class="section-head center">
+              <div>
+                <p class="eyebrow">Почему мы</p>
+                <h2>Высокое качество без компромиссов</h2>
+              </div>
+            </div>
+
+            <div class="benefits-grid">
+              <article>
+                <span>01</span>
+                <h3>Материалы премиум-класса</h3>
+                <p>Только сертифицированная древесина, ткани и фурнитура.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Индивидуальный подход</h3>
+                <p>Подбор мебели под особенности квартиры, дома и образ жизни.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Гарантия и сервис</h3>
+                <p>Обслуживание на всех этапах — от выбора до сборки и ухода.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+          <div class="container section-head center">
+            <div>
+              <p class="eyebrow">Отзывы</p>
+              <h2>Люди выбирают Atelier Form</h2>
+            </div>
+          </div>
+
+          <div class="container reviews-grid">
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>
+                “Мебель выглядит как в дизайнерском журнале. Комната ожила сразу после
+                доставки, и мы получили профессиональную консультацию на каждом этапе.”
+              </p>
+              <strong>Анна К.</strong>
+            </article>
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>
+                “Наконец-то нашли диван, который сочетает роскошь и удобство. Качество
+                материалов впечатляет, а сборка была безупречной.”
+              </p>
+              <strong>Михаил Р.</strong>
+            </article>
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>
+                “Единственный магазин, где можно подобрать мебель не только по внешнему
+                виду, но и по структуре пространства. Очень рекомендую.”
+              </p>
+              <strong>Елизавета П.</strong>
+            </article>
+          </div>
+        </section>
+
+        <section id="faq" class="cta-banner">
+          <div class="container cta-inner">
+            <div>
+              <p class="eyebrow">Современный интерьер</p>
+              <h2>Нужна помощь с подбором мебели для дома?</h2>
+            </div>
+            <a href="mailto:hello@atelierform.ru" class="primary-btn">hello@atelierform.ru</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="brand footer-brand">
+              <span class="brand-mark">A</span>
+              <div>
+                <span class="brand-name">Atelier Form</span>
+                <small>Luxury interiors</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#catalog">Каталог</a>
+            <a href="#about">О бренде</a>
+            <a href="#reviews">Отзывы</a>
+          </div>
+
+          <div class="footer-meta">
+            <span>© <span id="year"></span> Atelier Form</span>
+            <span>+7 (495) 221-04-11</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина покупок">
+      <div class="cart-header">
+        <h3>Корзина</h3>
+        <button class="close-cart" aria-label="Закрыть корзину">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Итого</span>
+          <strong id="cartTotal">0 ₽</strong>
+        </div>
+        <button class="checkout-btn">Оформить заказ</button>
+      </div>
+    </aside>
+  </body>
+</html>
